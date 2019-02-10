@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+		<title>LOGIN</title>
+		<link type="text/css" rel="stylesheet" href="style/reset.css" />
+		<link type="text/css" rel="stylesheet" href="style/main.css" />
+	</head>
+
+	<body>
+		<div class="headerBar">
+			<div class="logoBar login_logo">
+				<div class="comWidth">
+					<div class="logo fl">
+						<a href="#"><img src="image/icon/tieba.png" alt="Southwest Petroleum University Post Bar Emotion Analysis System"></a>
+					</div>
+					<h3 class="welcome_title">Welcome to SWPU. Post Bar Emotion Analysis System</h3>
+				</div>
+			</div>
+		</div>
+		<div class="jump">
+		<%
+			String userName = user.getUserName();
+			String password = user.getPassword();
+			String sql = "select * from login where userName='" + userName
+					+ "' and password='" + password + "'";
+			ResultSet rs=myDBBean.query(sql);
+			if(rs.next())
+			{
+				%>
+				<h2>Success！</h2>
+				<a href="login.jsp">Click Here</a>
+				<%
+			}
+			else
+			{
+				%>
+				<h2>Login Error: Wrong Username or Password</h2>
+				<a href="login.jsp">Re LOGIN</a>
+				<%
+			}
+			
+			rs.close();
+			myDBBean.close();
+			
+		%>
+	</div>
+	</body>
+</html>

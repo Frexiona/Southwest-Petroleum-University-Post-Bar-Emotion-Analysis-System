@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<title>My First Web</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			h1{
+				font-size: 12px;
+				color:#930;
+				text-align: 
+			}
+			span{
+				color: blue;
+			}
+			table tr th,td{
+				border: 1px solid #000;
+			}
+			a:hover{
+				color: red
+			}
+			.txtCenter{
+				text-align:center;
+			}
+			div{
+				border:1px solid red;
+				width: 200px;
+				margin: 20px auto;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Hello World</h1>
+		<p>This is the <em>first</em> <span>floor</span></p>
+		<p>This is the <strong>second</strong> <span>floor</span></p>
+		<p>This is the <q>third</q> floor</p>
+		<p>This is the <blockquote>fourth</blockquote> floor</p>
+		<p>This is the fifth<br> floor</p>
+		<hr>
+		<p>This is the sixth &nbsp;&nbsp;floor</p>
+		<p>
+			This is the seventh floor
+			<br>
+			<code>var i=i+300;</code>
+			<br>
+			<pre>
+				for i in 100:
+				print(i)
+			</pre>
+		</p>
+		<p>
+			This is the eighth floor<br>
+			<ul>
+				<li>FCBarcelona</li>
+				<li>RealMadrid</li>
+			</ul>
+		</p>
+		<p>
+			This is the ninth floor<br>
+			<ol>
+				<li>Python</li>
+				<li>Java</li>
+				<li>C++</li>
+			</ol>
+		</p>
+		<br>
+		<div id="Mode1">
+			<h2>This is the first div</h2>
+			<ol>
+				<li>Test1</li>
+				<li>Test2</li>
+			</ol>
+		</div>
+		<div id="Mode2">
+			<h2>This is the second div</h2>
+			<ul>
+				<li>Project1</li>
+				<li>Project2</li>
+			</ul>
+		</div>
+		<table summary="This is a football points table">
+			<caption>This is a football points table</caption>
+				<tbody>
+					<tr>
+						<th>Name</th>
+						<th>Points</th>
+					</tr>
+					<tr>
+						<td>FCBarcelona</td>
+						<td>100</td>
+					</tr>
+					<tr>
+						<td>RealMadrid</td>
+						<td>98</td>
+					</tr>
+				</tbody>
+		</table>
+		<a href="www.apple.com.cn" title="苹果公司中国官网" target="_blank">苹果公司中国官网</a>
+		<br>
+		<img src="Mygif.jpg" alt="Download failed" title="FCBarcelona">
+		<br>
+		<form method="post">
+			<label for="username">Username</label>
+			<input type="text" name="username">
+		</form>
+		<form>
+			<label for="password">Password</label>
+			<input type="password" name="pass" value="passwprd">
+		</form>
+		<form>
+			<textarea cols="20" rows="5">Please input here....</textarea>
+		</form>
+		<form>
+			<label for="team">My favourite football team:</label>
+			<input type="radio" name="footballTeam" value="FCBarcelona"> FCBarcelona
+			<input type="radio" name="footballTeam" value="China"> China
+			<br>
+			<label for="sports">My favouraite sport(s)</label>
+			<input type="checkbox" name="cb1" value="running"> running
+			<input type="checkbox" name="cb2" value="football" checked="checked"> football
+		</form>
+		<br>
+		<form>
+			<label>My favouraite sport</label>
+			<select>
+				<option value="running">running</option>
+				<option value="football" selected="selected">football</option>
+			</select>
+		</form>
+		<br>
+		<form>
+			<label>My favouraite sport(s)</label>
+			<select multiple="multiple">
+				<option value="running">running</option>
+				<option value="football" selected="selected">football</option>
+			</select>
+		</form>
+		<br>
+		<p style="color: red;font-size: 20px">Testing1</p>
+		<a>This is tie</a>
+		<div class="txtCenter">I wanna stay here</div>
+		<div>我是定宽块状元素，水平居中</div>
+		
+		<address>Made by Frexiona</address>
+	</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+		<title>LOGIN</title>
+		<link type="text/css" rel="stylesheet" href="style/reset.css" />
+		<link type="text/css" rel="stylesheet" href="style/main.css" />
+		<script language="javascript">
+			function check(form){
+				if (form.userName.value==""){
+					alert("Username can't be empty")
+					return false;
+				}else if (form.password.value=="" || form.rePassword.value==""){
+					alert("Password can't be empty")
+				}else if (form.password.value!=form.rePassword.value){
+					alert("Different Passwords!!")
+					return false;
+				}
+				else{
+					return true;
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="headerBar">
+			<div class="logoBar login_logo">
+				<div class="comWidth">
+					<div class="logo fl">
+						<a href="#"><img src="image/icon/tieba.png" alt="Southwest Petroleum University Post Bar Emotion Analysis System"></a>
+					</div>
+					<h3 class="welcome_title">Welcome to SWPU. Post Bar Emotion Analysis System</h3>
+				</div>
+			</div>
+		</div>
+		
+		<div class="regBox">
+			<div class="login_cont">
+				<form action="www.baidu.com" method="post" onSubmit="return check(this);">
+					<ul class="login">
+						<li>
+							<span class="reg_item"><i>*</i>Username：</span>
+							<div class="input_item">
+								<input type="text" class="login_input user_icon" id="userName" name="userName">
+							</div>
+						</li>
+						<li>
+							<span class="reg_item"><i>*</i>Password：</span>
+							<div class="input_item">
+								<input type="password" class="login_input user_icon" id="passward" name="passwprd">
+							</div>
+						</li>
+						<li>
+							<span class="reg_item"><i>*</i>Re-Password：</span>
+							<div class="input_item">
+								<input type="text" class="login_input user_icon" id="rePassword" name="rePassword">
+							</div>
+						</li>
+						<li>
+							<span class="reg_item">&nbsp;</span>
+							<input type="button" value="LOGIN" class="login_btn">
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
